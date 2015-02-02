@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kho hàng - Năm thụy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+    <div class="ui tabular menu">
+        <div class="item ui form">
+            <div class="ui icon input">
+                <input placeholder="[F3] Tìm hàng hóa..." type="text">
+                <i class="search link icon"></i>
+            </div>
+        </div>
+        <a class="active item" data-tab="hd1">
+            Hóa đơn 1 <i class="close red icon"></i>
+        </a>
+        <a class="item" data-tab="hd2">
+            Hóa đơn 2 <i class="close red icon"></i>
+        </a>
+        <a class="item">
+            <div class="ui icon button">
+                <i class="icon plus"></i>
+            </div>
+        </a>
+        <div class="right menu">
+            <a class="ui item">
+                <div class="ui icon button">
+                    <i class="icon minus"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="ui active tab" data-tab="hd1">
+        <div class="ui internally celled grid">
+            <div class="row">
+                <div class="ten wide column">
+                    <div class="row">
+                        <div class="sixteen wide column">tren</div>
+                    </div>
+                    <div class="row">
+                        <div class="sixteen wide column">duoi</div>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    phai
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+<!--  <script src="app.js"></script>-->
+    <script src="bower_components/semantic-ui/dist/semantic.min.js"></script>
+    <script type="text/javascript">
+        $('.tabular.menu .item').tab();
+    </script>
+</body>
+</html>
